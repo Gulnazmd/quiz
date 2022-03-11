@@ -5,9 +5,12 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
-      'midnight': '#203239',
-      'lightgreen': '#E0DDAA',
-      'beige': '#EEEDDE',
+      'midnight': '#64C9CF',
+      'border': '#B5EAEA',
+      'lightgreen': '#FEF7DC',
+      'beige': '#FFEDDA',
+      'white': '#F7F7F7',
+      'grey': '#637373',
     },
   },
   variants: {
