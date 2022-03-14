@@ -32,9 +32,8 @@ function QuizPage () {
 							<li>Share your score on social media</li>
 						</ul>
 					</div>
-					<button className='ml-auto bg-lightgreen text-grey rounded-full font-bold m-6 text-2xl py-1.5 px-3.5 cursor-pointer' onClick={() => router.push('/quiz')}>
-						Start quiz
-     			</button>
+					
+					<button type="button" class="inline-block m-6 px-6 py-2.5 bg-lightgreen text-grey font-medium text-xl leading-tight uppercase rounded-full shadow-md hover:bg-darkgreen hover:shadow-lg focus:bg-darkgreen focus:shadow-lg focus:outline-none focus:ring-0 active:bg-darkgreen active:shadow-lg transition duration-150 ease-in-out" onClick={() => router.push('/quiz')}>Start quiz</button>
 						</div>
 			</main>
 		</div>
