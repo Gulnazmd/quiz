@@ -5,13 +5,14 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
-      'midnight': '#64C9CF',
+      'midnight': '#30475E',
       'border': '#B5EAEA',
       'lightgreen': '#FFF8D9',
       'darkgreen': '#D5DBB3',
       'beige': '#FFEDDA',
       'white': '#F7F7F7',
       'grey': '#637373',
+      'red': '#F05454',
     },
   },
   variants: {

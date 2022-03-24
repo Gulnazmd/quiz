@@ -2,6 +2,7 @@ import React from 'react';
 import Card from "../components/card";
 import { data } from '../data';
 import  { useState } from "react";
+import Header from '../components/header';
 
 
 export default function Quiz () {
@@ -61,6 +62,8 @@ export default function Quiz () {
 		);
 	} else {
 		return (
+			<div>
+			<Header/>
 			<Card>
 				<h5 className="text-grey text-2xl leading-tight font-medium mb-2">{data[ currentQuestion ].question}</h5>
 				<span className="m-2 border-2 border-black mx-auto px-2 bg-gray-600 	text-pink-400 rounded-lg text-center">
@@ -105,7 +108,8 @@ export default function Quiz () {
 						)}
 					</div>
 				</div>
-			</Card>
+				</Card>
+				</div>
 		);
 	}
 }
