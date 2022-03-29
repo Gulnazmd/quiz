@@ -3,6 +3,7 @@ import Card from "../components/card";
 import { data } from '../data';
 import  { useState } from "react";
 import Header from '../components/header';
+import Button from '../components/UI/button';
 
 
 export default function Quiz () {
@@ -51,12 +52,11 @@ export default function Quiz () {
 			${score}/${data.length}
 			points.`}
 					</h3>
-					<button
-						className=" inline-block mt-8 px-6 py-2.5 bg-lightgreen text-grey font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-darkgreen hover:shadow-lg focus:bg-darkgreen focus:shadow-lg focus:outline-none focus:ring-0 active:bg-darkgreen active:shadow-lg transition duration-150 ease-in-out"
-						onClick={() => startOver()}
+					<Button
+						clicked={() => startOver()}
 					>
 						Start Over
-					</button>
+					</Button>
 				</div>
 			</div>
 		);
@@ -84,27 +84,25 @@ export default function Quiz () {
 							</div>
 						))}
 						{currentQuestion < data.length - 1 && (
-							<button
-							className=" inline-block mt-8 px-6 py-2.5 bg-lightgreen text-grey font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-darkgreen hover:shadow-lg focus:bg-darkgreen focus:shadow-lg focus:outline-none focus:ring-0 active:bg-darkgreen active:shadow-lg transition duration-150 ease-in-out"
-								onClick={() => {
+							<Button
+								clicked={() => {
 									setCurrentQuestion(currentQuestion + 1);
 									checkCorrectAnswer();
 									reset();
 								}}
 							>
 								NEXT
-							</button>
+							</Button>
 						)}
 						{currentQuestion === data.length - 1 && (
-							<button
-								className=" inline-block mt-8 px-6 py-2.5 bg-lightgreen text-grey font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-darkgreen hover:shadow-lg focus:bg-darkgreen focus:shadow-lg focus:outline-none focus:ring-0 active:bg-darkgreen active:shadow-lg transition duration-150 ease-in-out"
-								onClick={() => {
+							<Button
+								clicked={() => {
 									finishHandler()
 									checkCorrectAnswer();}
 								}
 							>
 								FINISH
-							</button>
+							</Button>
 						)}
 					</div>
 				</div>

@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
-      'midnight': '#30475E',
+      'midnight': '#96CEB4',
       'border': '#B5EAEA',
       'lightgreen': '#FFF8D9',
       'darkgreen': '#D5DBB3',
@@ -13,6 +13,8 @@ module.exports = {
       'white': '#F7F7F7',
       'grey': '#637373',
       'red': '#F05454',
+      'orange': '#EA5C2B',
+      'green': '#BECA5C',
     },
   },
   variants: {
