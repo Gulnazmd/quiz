@@ -11,10 +11,10 @@ function QuizPage () {
 	return (
     <div>
 			<main className='bg-midnight min-h-screen flex max-w-[1500px] mx-auto'>
-				
+
 				<div className='flex-grow border-l border-r border-border max-w-2xl sm:ml-[73px] xl:ml-[370px]'>
 					<div className='flex items-center px-5 py-2 border-b border-gray-700 text-white font-semibold text-2xl gap-x-4 sticky top-0 z-50 bg-black'>
-           English quiz
+           JavaScript quiz
 					</div>
 					<div className="grid grid-cols-3 gap-4 items-center">
   <div className="mb-4">

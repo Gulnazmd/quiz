@@ -3,8 +3,13 @@ module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    fontFamily: {
+      'hurricane': [ 'Hurricane', 'cursive' ],
+      'insparation': ['Inspiration', 'cursive' ],
+    },
     extend: {},
     colors: {
+      'head': '#931A25',
       'midnight': '#96CEB4',
       'border': '#B5EAEA',
       'lightgreen': '#FFF8D9',
@@ -20,5 +25,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: []
 }
