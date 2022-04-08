@@ -20,7 +20,6 @@ const Courses = () => {
 
 			<div className='container max-w-7xl px-4 md:px-6'>
 
-      <h1>Hello</h1>
 			</div>
 				<div className='flex'>
 					<Card>
@@ -31,8 +30,8 @@ const Courses = () => {
 						<div className="mb-3 px-3 border-b border-gray-300"></div>
 						<p>What's included:</p>
 						<ul type="disk">
-							<li>✓ Using an inappropriate file name and email address.</li>
-							<li>✓ Using an inappropriate file name and email address.</li>
+							<li><span className='text-green text-2xl font-bold'>✓</span> Using an inappropriate file name and email address.</li>
+							<li>{'\u274C'} Using an inappropriate file name and email address.</li>
 						</ul>
 					</Card>
 					<Card>
@@ -43,8 +42,8 @@ const Courses = () => {
 						<div className="mb-3 px-3 border-b border-gray-300"></div>
 						<p>What's included:</p>
 						<ul type="disk">
-							<li>✓ Using an inappropriate file name and email address.</li>
-							<li>✓ Using an inappropriate file name and email address.</li>
+							<li><span className='text-green text-2xl font-bold'>✓</span> Using an inappropriate file name and email address.</li>
+							<li><span className='text-green text-2xl font-bold'>✓</span>Using an inappropriate file name and email address.</li>
 						</ul>
 					</Card>
 				<Card>
@@ -55,8 +54,8 @@ const Courses = () => {
 						<div className="mb-3 px-3 border-b border-gray-300"></div>
 						<p>What's included:</p>
 						<ul type="disk">
-							<li>✓ Using an inappropriate file name and email address.</li>
-							<li>✓ Using an inappropriate file name and email address.</li>
+							<li><span className='text-green text-2xl font-bold'>✓</span> Using an inappropriate file name and email address.</li>
+							<li><span className='text-green text-2xl font-bold'>✓</span> Using an inappropriate file name and email address.</li>
 						</ul>
 					</Card>
 				</div>

@@ -57,6 +57,7 @@ export default function Quiz () {
 					>
 						Start Over
 					</Button>
+					<Button>Save results</Button>
 				</div>
 			</div>
 		);
@@ -64,7 +65,7 @@ export default function Quiz () {
 		return (
 			<div>
 				<Header />
-				<div className='flex justify-center bg-green w-64 h-2 mt-6 rounded-sm blog '></div>
+				<div className='flex justify-center bg-green w-74 h-2 rounded-md mt-8 ml-20 mr-20 blog '></div>
 			<Card>
 				<h5 className="text-grey text-2xl leading-tight font-medium mb-2">{data[ currentQuestion ].question}</h5>
 				<span className="m-2 border-2 border-black mx-auto px-2 bg-gray-600 	text-pink-400 rounded-lg text-center">

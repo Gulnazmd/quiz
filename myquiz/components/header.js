@@ -20,11 +20,11 @@ const Header = () => {
               onClick={() => router.push('/')}>MaturDev </p>
           <span className='font-insparation font-xl text-head'> {'\u003C'}  for Coding  {'\u003E'} </span>
         </div>
-							<li className='mx-5 mt-1 cursor-pointer text-grey hover:text-red'>Our tests</li>
-        <li className="mx-5 mt-1 cursor-pointer text-grey hover:text-red">About Us</li>
+							<li onClick={() => router.push('/quiz')} className='mx-5 mt-1 cursor-pointer text-grey hover:text-red'>Our tests</li>
+        <li onClick={() => router.push('/blog')} className="mx-5 mt-1 cursor-pointer text-grey hover:text-red">Blog</li>
         <li className="mx-5 mt-1 cursor-pointer text-grey hover:text-red"
             onClick={() => router.push('/courses')}>Courses</li>
-        <p className='mx-5  mt-1 cursor-pointer text-grey hover:text-red'>LogIn</p>
+        <p onClick={() => router.push('/login')} className='mx-5  mt-1 cursor-pointer text-grey hover:text-red'>LogIn</p>
       </ul>
 
      </div>
