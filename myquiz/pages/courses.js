@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import Header from '../components/header';
 import Card from '../components/card';
@@ -26,9 +26,9 @@ const Courses = () => {
 						<h1 className='text-orange text-2xl'>Perfect inretview</h1>
       			<small>All confused questions</small>
       			<h2 className='font-bold'>$25</h2>
-						<Button>Buy</Button>
+						<Button onClick={handleOpen}>Buy</Button>
 						<div className="mb-3 px-3 border-b border-gray-300"></div>
-						<p>What's included:</p>
+						<p className='font-bold'>What's included:</p>
 						<ul type="disk">
 							<li><span className='text-green text-2xl font-bold'>✓</span> Using an inappropriate file name and email address.</li>
 							<li>{'\u274C'} Using an inappropriate file name and email address.</li>
@@ -40,7 +40,7 @@ const Courses = () => {
       			<h2 className='font-bold'>$39</h2>
 						<Button>Buy</Button>
 						<div className="mb-3 px-3 border-b border-gray-300"></div>
-						<p>What's included:</p>
+						<p className='font-bold'>What's included:</p>
 						<ul type="disk">
 							<li><span className='text-green text-2xl font-bold'>✓</span> Using an inappropriate file name and email address.</li>
 							<li><span className='text-green text-2xl font-bold'>✓</span>Using an inappropriate file name and email address.</li>
@@ -52,7 +52,7 @@ const Courses = () => {
       			<h2 className='font-bold'>$18</h2>
 						<Button>Buy</Button>
 						<div className="mb-3 px-3 border-b border-gray-300"></div>
-						<p>What's included:</p>
+						<p className='font-bold'>What's included:</p>
 						<ul type="disk">
 							<li><span className='text-green text-2xl font-bold'>✓</span> Using an inappropriate file name and email address.</li>
 							<li><span className='text-green text-2xl font-bold'>✓</span> Using an inappropriate file name and email address.</li>

@@ -20,8 +20,8 @@ const LoginForm = () => {
 
 		const result = await signIn('credentials', {
 			redirect: false,
-			email,
-			password
+			email: null,
+			password: null
 		});
 
 		if (result.error) {
@@ -34,7 +34,7 @@ const LoginForm = () => {
 
 	return (
 		<div className='flex items-center justify-center bg-gray-200 dark:bg-gray-900 rounded-md px-7 py-7 shadow-gray-500'>
-			<form onSubmit={handleSubmit}>
+			<form className='bg-midnight rounded-md m-6 p-8' onSubmit={handleSubmit}>
 				<div className='w-full'>
 					<label
 						htmlFor='email_field'
@@ -76,12 +76,12 @@ const LoginForm = () => {
 				</div>
 				<div className='mt-7 flex justify-center w-full'>
 					<button
-						className='flex items-center justify-center bg-red-600 text-white rounded-lg w-full py-1.5 font-bold shadow-md hover:bg-red-800'
+						className='flex items-center justify-center bg-darkgreen text-white rounded-lg w-full py-1.5 font-bold cursor-pointer shadow-md hover:bg-green'
 						type='submit'
 						disabled={!email && !password}
 					>
 						{email && password && loading ? (
-							<div className='animate-spin rounded-full h-6 w-6 border-b-4 border-gray-200'></div>
+							<div className='animate-spin rounded-full h-6 w-6 border-b-4 border-grey'></div>
 						) : (
 							'Login'
 						)}
@@ -89,10 +89,10 @@ const LoginForm = () => {
 				</div>
 				<div className='mt-7 text-sm font-bold flex justify-between w-full'>
 					<Link href='/password/forgot-password'>
-						<a className='text-red-500 hover:text-red-700'>Forgot Password?</a>
+						<a className='text-grey hover:text-orange'>Forgot Password?</a>
 					</Link>
 					<Link href='/register'>
-						<a className='text-gray-500 hover:text-gray-600'>Register</a>
+						<a className='text-grey hover:text-orange'>Register</a>
 					</Link>
 				</div>
 			</form>
